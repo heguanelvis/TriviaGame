@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>China Trivia Game</title>
+  <!-- Reset Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- CSS Stylesheet to Personalize Style -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bonbon|Courgette|Petit+Formal+Script" rel="stylesheet">
+
+  <!-- Favicon Link -->
+  <link rel="shortcut icon" href="http://www.freepngimg.com/download/chinese_dragon/7-2-chinese-dragon-high-quality-png.png"
+    type="image/x-icon">
+
+  <!-- Font Awesome Icon Link -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <!-- Javascript Link -->
+  <script src="./assets/javascript/app.js"></script>
+</head>
+
+
+<body>
+
+  <header>
+    <h1>China Trivia Game</h1>
+  </header>
+
+
+  <div class='container'>
+
+
+
+    <!-- Start Game -->
+    <br>
+    <button class='btn btn-primary' id='startBtn'>Ready!</button>
+
+
+    <!-- Question page -->
+    <div id=timeLeft></div>
+    <br>
+    <div id=currentQuestion></div>
+    <br>
+    <div class='question'></div>
+    <br>
+    <div class='answerList'></div>
+
+
+
+    <!-- Answer Page -->
+    <div id=message></div>
+    <div id=correctedAnswer></div>
+
+
+
+    <!-- Score Count -->
+    <div id=finalMessage></div>
+    <div id=correctAnswers></div>
+    <div id=incorrectAnswers></div>
+    <div id=unanswered></div>
+    <div id='startOverBtn'></div>
+
+
+  </div>
+
+</body>
+
+</html>
