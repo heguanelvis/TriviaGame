@@ -6,3 +6,57 @@ font-family: 'Bonbon', cursive;
 */
 
 
+.background{
+    background-image: url("./../images/gray.jpg")
+}
+
+.jumbotron{
+    background-image: url("./../images/stripes2.png")
+}
+
+.headfont{
+    font-family: 'Courgette', cursive; 
+    font-size: 80px;
+    color:whitesmoke
+}
+
+.leadfont{
+    font-family: 'Petit Formal Script', cursive;
+    font-size:20px;
+    font-weight:bold;
+    color:whitesmoke
+}
+
+.btn{
+    font-family: 'Courgette', cursive; 
+}
+
+.time-text{
+    font-family: 'Courgette', cursive; 
+    color:darkred;
+}
+
+.question-number-text{
+    font-family: 'Bonbon', cursive;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.question-text{
+    font-family: 'Courgette', cursive; 
+}
+
+.answer-text{
+    font-family: 'Courgette', cursive; 
+    font-size:25px;
+}
+
+.answer-page-text{
+    font-family: 'Courgette', cursive; 
+    font-size:25px;
+}
+
+.score-text{
+    font-family: 'Courgette', cursive; 
+    font-size:25px;
+}

@@ -166,7 +166,7 @@ $(document).ready(function () {
 
   //Count the time:
   function countdown() {
-    seconds = 12;
+    seconds = 15;
     $('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
     answered = true;
 

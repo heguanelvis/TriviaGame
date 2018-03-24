@@ -37,13 +37,13 @@
 </head>
 
 
-<body>
+<body class="background">
 
   <header>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">China Trivia Game</h1>
-        <p class="lead">Let's see how much you know about China!</p>
+        <h1 class="display-4 headfont">China Trivia Game</h1>
+        <p class="lead leadfont">Let's see how much you know about China!</p>
       </div>
     </div>
   </header>
@@ -55,32 +55,32 @@
 
     <!-- Start Game -->
     <br>
-    <button class='btn btn-primary' id='startBtn'>Ready!</button>
+    <button class='btn btn-light btn-lg' id='startBtn'>Are You Ready!</button>
 
 
     <!-- Question page -->
-    <div id=timeLeft></div>
+    <div id="timeLeft" class="time-text"></div>
     <br>
-    <div id=currentQuestion></div>
+    <div id="currentQuestion" class="question-number-text"></div>
     <br>
-    <div class='question'></div>
+    <div class='question question-text'></div>
     <br>
-    <div class='answerList'></div>
+    <div class='answerList answer-text'></div>
 
 
 
     <!-- Answer Page -->
-    <div id=message></div>
-    <div id=correctedAnswer></div>
+    <div id='message' class="answer-page-text"></div>
+    <div id='correctedAnswer' class="answer-page-text"></div>
 
 
 
     <!-- Score Count -->
-    <div id=finalMessage></div>
-    <div id=correctAnswers></div>
-    <div id=incorrectAnswers></div>
-    <div id=unanswered></div>
-    <div id='startOverBtn'></div>
+    <div id='finalMessage' class="score-text"></div>
+    <div id='correctAnswers' class="score-text"></div>
+    <div id='incorrectAnswers' class="score-text"></div>
+    <div id='unanswered' class="score-text"></div>
+    <div id='startOverBtn' class="score-text"></div>
 
 
   </div>
