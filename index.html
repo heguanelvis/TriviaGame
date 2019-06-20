@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>China Trivia Game</title>
+    <!-- Reset Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>China Trivia Game</title>
-  <!-- Reset Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Bootstrap Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap Stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- CSS Stylesheet to Personalize Style -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
-  <!-- CSS Stylesheet to Personalize Style -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bonbon|Courgette|Petit+Formal+Script"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Bonbon|Courgette|Petit+Formal+Script" rel="stylesheet">
+    <!-- Favicon Link -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/chinese-dragon.png"
+      type="image/x-icon"
+    />
 
-  <!-- Favicon Link -->
-  <link rel="shortcut icon" href="http://www.freepngimg.com/download/chinese_dragon/7-2-chinese-dragon-high-quality-png.png"
-    type="image/x-icon">
+    <!-- Font Awesome Icon Link -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
 
-  <!-- Font Awesome Icon Link -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Javascript Link -->
+    <script src="./assets/javascript/app.js"></script>
+  </head>
 
-  <!-- Javascript Link -->
-  <script src="./assets/javascript/app.js"></script>
-</head>
-
-
-<body class="background">
-
-  <header>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 headfont">China Trivia Game</h1>
-        <p class="lead leadfont">Let's see how much you know about China!</p>
+  <body class="background">
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 headfont">China Trivia Game</h1>
+          <p class="lead leadfont">Let's see how much you know about China!</p>
+        </div>
       </div>
+    </header>
+
+    <div class="container">
+      <!-- Start Game -->
+      <br />
+      <button class="btn btn-light btn-lg" id="startBtn">Are You Ready!</button>
+
+      <!-- Question page -->
+      <div id="timeLeft" class="time-text"></div>
+      <br />
+      <div id="currentQuestion" class="question-number-text"></div>
+      <br />
+      <div class="question question-text"></div>
+      <br />
+      <div class="answerList answer-text"></div>
+
+      <!-- Answer Page -->
+      <div id="message" class="answer-page-text"></div>
+      <div id="correctedAnswer" class="answer-page-text"></div>
+
+      <!-- Score Count -->
+      <div id="finalMessage" class="score-text"></div>
+      <div id="correctAnswers" class="score-text"></div>
+      <div id="incorrectAnswers" class="score-text"></div>
+      <div id="unanswered" class="score-text"></div>
+      <div id="startOverBtn" class="score-text"></div>
     </div>
-  </header>
-
-
-  <div class='container'>
-
-
-
-    <!-- Start Game -->
-    <br>
-    <button class='btn btn-light btn-lg' id='startBtn'>Are You Ready!</button>
-
-
-    <!-- Question page -->
-    <div id="timeLeft" class="time-text"></div>
-    <br>
-    <div id="currentQuestion" class="question-number-text"></div>
-    <br>
-    <div class='question question-text'></div>
-    <br>
-    <div class='answerList answer-text'></div>
-
-
-
-    <!-- Answer Page -->
-    <div id='message' class="answer-page-text"></div>
-    <div id='correctedAnswer' class="answer-page-text"></div>
-
-
-
-    <!-- Score Count -->
-    <div id='finalMessage' class="score-text"></div>
-    <div id='correctAnswers' class="score-text"></div>
-    <div id='incorrectAnswers' class="score-text"></div>
-    <div id='unanswered' class="score-text"></div>
-    <div id='startOverBtn' class="score-text"></div>
-
-
-  </div>
-
-</body>
-
+  </body>
 </html>
